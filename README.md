@@ -70,3 +70,24 @@ Download the AG News dataset from Kaggle and place it in the data/ directory.
 
 🔹 Run code
 
+
+## 📊 Visualization
+
+
+
+🔹 Training & Test Accuracy
+
+  ![Training & Test Accuracy](Training&TestAccuracy.png)
+
+
+
+🔹 Attention Scores per Token
+
+  ![Attention Scores per Token](AttentionScoresperToken.png)
+
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
