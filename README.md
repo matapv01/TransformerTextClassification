@@ -1,35 +1,72 @@
-# TransformerTextClassification
-# AG News Classification with a Nano Transformer
+# 🚀 AG News Classification with a Nano Transformer  
 
-This project demonstrates text classification using a simplified Transformer model, referred to as a "Nano Transformer," on the AG News dataset. The model is implemented in PyTorch and trained to categorize news articles into four classes: World, Sports, Business, and Science/Technology.
+A lightweight **Transformer-based** model for **news classification** using **PyTorch**.  
+This project implements a **Nano Transformer**, a simplified Transformer model designed for efficiency, to classify news articles into four categories:  
 
-## Dataset
+- 🌍 **World**  
+- ⚽ **Sports**  
+- 💰 **Business**  
+- 🔬 **Science/Technology**  
 
-The AG News dataset is used for training and evaluation. It consists of short news articles and their corresponding labels. The dataset can be downloaded from Kaggle.
+---
 
-## Model
+## 📂 Dataset  
 
-The Nano Transformer is an encoder-only Transformer model with a reduced number of layers and parameters compared to traditional Transformer architectures. It utilizes an embedding layer for tokens, sinusoidal positional embeddings, a single Transformer block (with multi-head attention and feed-forward layers), and a final linear layer for prediction.
+The project uses the **AG News** dataset, a benchmark dataset for text classification. It contains **120,000** training samples and **7,600** test samples, each labeled into one of four categories.  
 
-## Training
+### 📥 Download the Dataset  
 
-The model is trained using the Adam optimizer and cross-entropy loss. Cosine annealing is employed for learning rate scheduling. Token dropping is applied during training as a regularization technique.
+The dataset can be downloaded from **Kaggle**  
 
-## Evaluation
+After downloading, place the dataset in the `data/` directory
 
-The model's performance is evaluated on a held-out test set using metrics such as accuracy, precision, recall, and F1-score. A confusion matrix is also generated to visualize the classification results.
 
-## Usage
+---
 
-1. Clone the repository.
-2. Install the required dependencies: `pip install -r requirements.txt`.
-3. Download the AG News dataset and place it in the designated data directory.
-4. Run the code
+## 🏗️ Model Architecture  
 
-## Results
+The **Nano Transformer** is a **compact encoder-only** Transformer designed for fast training while maintaining accuracy.  
 
-The Nano Transformer achieves competitive accuracy on the AG News classification task. The results are presented in the evaluation script output and visualized in the generated plots.
+### 🔧 Model Components:  
 
-## Contributing
+- **Token Embeddings** – Converts input text into dense vectors  
+- **Sinusoidal Positional Embeddings** – Adds word order information  
+- **Transformer Block**:  
+  - **Multi-head self-attention (MHA)** – Captures contextual relationships  
+  - **Feed-forward network (FFN)** – Learns high-level representations  
+- **Final Linear Layer** – Maps the output to four news categories  
 
-Contributions to this project are welcome! Feel free to open issues or submit pull requests for bug fixes, enhancements, or new features.
+📌 *This small-scale Transformer model enables efficient training even on low-resource environments!*  
+
+---
+
+## 🏋️ Training and Evaluation
+
+The model is trained using **PyTorch** with the following setup:  
+
+- **Optimizer**: Adam  
+- **Loss Function**: Cross-Entropy Loss  
+- **Learning Rate Scheduler**: Cosine Annealing  
+- **Regularization**: Token Dropping  
+
+The model's performance is assessed using:  
+
+- **Accuracy – Measures overall correctness**  
+- **Precision & Recall – Evaluates classification performance per class**  
+- **F1-Score – Balances precision and recall** 
+- **Confusion Matrix – Visualizes classification errors**
+
+## ⚡ How to Use
+
+🔹 Clone the Repository
+
+🔹 Install Dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+🔹 Prepare Data:
+Download the AG News dataset from Kaggle and place it in the data/ directory.
+
+🔹 Run code
+
