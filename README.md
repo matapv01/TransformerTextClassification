@@ -90,4 +90,4 @@ Download the AG News dataset from Kaggle and place it in the data/ directory.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-This project is licensed under the MIT License - see the LICENSE file for details.
+
